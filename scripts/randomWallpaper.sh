@@ -44,6 +44,9 @@ change_wallpaper() {
     wallpaperIndex=$(( RANDOM % ${#wallpapers[@]} ))
     selectedWallpaper="${wallpapers[$wallpaperIndex]}"
 
+    #change the wallpaper
+    swww img "$selectedWallpaper"
+
     # Update the lockscreen wallpwper
     cp "$selectedWallpaper" "$HOME/.config/hypr/.wallpaper_current"
 }
