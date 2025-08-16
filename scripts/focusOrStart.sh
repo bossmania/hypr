@@ -22,13 +22,6 @@ then
 	hyprctl dispatch focuswindow address:$address
 else
   echo new
-	#check if the workspace isnt a negative number
-    if [[ $workspaceOnStart -ge 0 ]]
-    then
-      echo go to workspace $workspaceOnStart
-      # run it in a speific workspace
-	    hyprctl dispatch workspace $workspaceOnStart
-    fi
-    #run the program
+  #run the program
 	${execCommand} & 
 fi
