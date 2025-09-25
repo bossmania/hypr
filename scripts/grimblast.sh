@@ -1,3 +1,5 @@
+#STOLEN FROM https://github.com/hyprwm/contrib/blob/main/grimblast/grimblast
+
 #!/usr/bin/env bash
 ## Grimblast: a helper for screenshots within hyprland
 ## Requirements:
